@@ -9,20 +9,22 @@ function generatePassword() {
     let upperCase = confirm('Include uppercase letters');
 
     let passCriteria;
-       if(passLength >= 8 && (num || specialCharacters || lowerCase ||upperCase)) {
+       if(minPassLength >= 8 && maxPassLength <= 128 (num || specialCharacters || lowerCase ||upperCase)) {
         passCriteria = {
           num: "1234567890",
           specialCharacters: "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~",
           lowerCase:"abcdefghijklmnopqrstuvwxyz",
           upperCase:"ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-          chars: [num, specialCharacters,lowerCase,upperCase],
-          passLength: 8,
+          chars: [num, specialCharacters, lowerCase, upperCase],
+          minPassLength: 8,
+          maxPassLength: 128, 
         }
         
+    return passCriteria = true;
+        
       }
-    
-    
-  return passCriteria;
+  
+  
 }; 
 
 
