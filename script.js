@@ -10,14 +10,14 @@ function generatePassword() {
 
     let passCriteria;
 
-
+        // Invalid condition for password length
       if(userInput < 8 || userInput > 128 || isNaN(userInput)) {
         alert('Invalid password length');
-        // return "Invalid password length"
+        
         generatePassword()
       
       }
-
+      // Invalid condition for selecting character types 
       if(!lowerCase && !upperCase && !specialCharacters && !num) {
         alert('Please select a character type');
 
@@ -26,6 +26,10 @@ function generatePassword() {
       }
 
       
+
+
+
+
       
        if(minPassLength >= 8 && maxPassLength <= 128 (num || specialCharacters || lowerCase ||upperCase)) {
         passCriteria = {
