@@ -3,6 +3,8 @@ var generateBtn = document.querySelector("#generate");
 
 //Separated length and character types into two functions to ensure an invalid character type selection (but valid password length) doesn't return prompt series to password length
 
+//parseInt converts a string to an integer for later comparison using userInput
+
 function hasPasswordLength() {
   let userInput = parseInt(prompt("Enter password length"));
 
@@ -29,7 +31,7 @@ function hasCharacterTypes() {
     return hasCharacterTypes();
 }
 
-//
+//Creates an object for future retrieval via conditional operators
 
   return { num, specialCharacters, lowerCase, upperCase };
 
@@ -43,53 +45,35 @@ function generatePassword() {
   let enteredCharacters = '';
   let password = '';
 
-  //Stores input of each character type with one function for each
+  //Stores input of each character type with one function for each in possibleCharacters
 
   if (characterTypes.num) {
-    enteredCharacters += '1234567890';
+    possibleCharacters += '1234567890';
 
   }
 
   if (characterTypes.specialCharacters) {
-    enteredCharacters += "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
+    possibleCharacters += "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
   }
 
   if (characterTypes.lowerCase) {
-    enteredCharacters += "abcdefghijklmnopqrstuvwxy";
+    possibleCharacters += "abcdefghijklmnopqrstuvwxy";
   }
 
   if (characterTypes.upperCase) {
-    enteredCharacters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    possibleCharacters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
 
+// Concatinates one random position on possibleCharacters string to password in a loop based on userInput in hasPasswordLength function 
+
+  for (let i= 0; i < passwordLength; i++) {
+    let randomCharIndex = Math.floor(Math.random() * possibleCharacters.length);
+    password += possibleCharacters[randomCharIndex];
+  }
   
-  
+  return password; 
  
 }
-
-  
-
-   
-
-  let passCriteria = {
-    num: "1234567890",
-    specialCharacters: "!#$%&'()*+,-./:;<=>?@[]^_`{|}~",
-    lowerCase: "abcdefghijklmnopqrstuvwxyz",
-    upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-    chars: [num, specialCharacters, lowerCase, upperCase],
-    minPassLength: 8,
-    maxPassLength: 128,
-  };
-
-  if (
-    minPassLength >= 8 &&
-    maxPassLength <= 128(num || specialCharacters || lowerCase || upperCase)
-  ) {
-    
-
-    return (passCriteria = true);
-  }
-
 
 // Write password to the #password input
 function writePassword() {
