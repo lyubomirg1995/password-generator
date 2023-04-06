@@ -83,7 +83,7 @@ function writePassword() {
   
   //referencing .placeholder allows generated password to be pasted in textbox
 
-  passwordText.placeholder = password;
+  passwordText.value = password;
 
 }
 
