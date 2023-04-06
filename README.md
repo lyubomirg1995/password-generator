@@ -12,7 +12,7 @@ N/A
 
 ![alt text](./assets/images/password-generator.png)
 
-Click the button, "Generate Password," then type an integer signifying a password length between (and including) 8 and 128 characters. Next, select at least one character type. Writing a password length less than 8 characters or greater than 128 characters, or not selecting any character types will cause the program to run through the prompts again, until the password criteria are met. 
+Click the button, "Generate Password," then type an integer signifying a password length between (and including) 8 and 128 characters. Next, select at least one character type. Writing a password length less than 8 characters or greater than 128 characters, or not selecting any character types, will cause the program to run through the prompts again, until the password criteria are met. 
 
 The application can be accessed here: https://lyubomirg1995.github.io/password-generator/
 
