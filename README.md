@@ -35,6 +35,8 @@ Concatenation: https://javascript.info/operators
 ---Techniques---
 
 Invalid conditions, if statements for character types: AskBCS Learning Assistant, skaliaperumal, and Chris Baird (tutor)
+
+
 for loop/random string generation: https://dev.to/code_mystery/random-password-generator-using-javascript-6a + Chris Baird (tutor)
 
 
