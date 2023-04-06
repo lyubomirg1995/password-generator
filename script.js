@@ -40,7 +40,30 @@ function generatePassword() {
   let passwordLength = hasPasswordLength();
   let characterTypes = hasCharacterTypes();
   
+  let enteredCharacters = '';
+  let password = '';
 
+  //Stores input of each character type with one function for each
+
+  if (characterTypes.num) {
+    enteredCharacters += '1234567890';
+
+  }
+
+  if (characterTypes.specialCharacters) {
+    enteredCharacters += "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
+  }
+
+  if (characterTypes.lowerCase) {
+    enteredCharacters += "abcdefghijklmnopqrstuvwxy";
+  }
+
+  if (characterTypes.upperCase) {
+    enteredCharacters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  }
+
+  
+  
  
 }
 
