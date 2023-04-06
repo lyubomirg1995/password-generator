@@ -21,10 +21,15 @@ The application can be accessed here: https://lyubomirg1995.github.io/password-g
 ---Knowledge base---
 
 Functions: https://javascript.info/function-basics
+
 Function expressions: https://javascript.info/function-expressions
+
 Logical operators: https://javascript.info/logical-operators
+
 Comparisons: https://javascript.info/comparison
+
 for loops: https://javascript.info/while-for#the-for-loop
+
 Concatenation: https://javascript.info/operators
 
 ---Techniques---
