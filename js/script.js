@@ -65,6 +65,7 @@ function generatePassword() {
   }
 
 // Concatinates one random position on possibleCharacters string to password in a loop based on userInput in hasPasswordLength function 
+// .length property ensures the randomly selected string position does not fall outside of the string's bounds
 
   for (let i= 0; i < passwordLength; i++) {
     let randomCharIndex = Math.floor(Math.random() * possibleCharacters.length);
