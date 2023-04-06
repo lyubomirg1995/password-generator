@@ -42,7 +42,7 @@ function generatePassword() {
   let passwordLength = hasPasswordLength();
   let characterTypes = hasCharacterTypes();
   
-  let enteredCharacters = '';
+  let possibleCharacters = '';
   let password = '';
 
   //Stores input of each character type with one function for each in possibleCharacters
@@ -79,8 +79,9 @@ function generatePassword() {
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+  
   passwordText.value = password;
+
 }
 
 // Add event listener to generate button
