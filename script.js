@@ -80,7 +80,9 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   
-  passwordText.value = password;
+  //referencing .placeholder allows generated password to be pasted in textbox
+
+  passwordText.placeholder = password;
 
 }
 
