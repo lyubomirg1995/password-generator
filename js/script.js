@@ -81,7 +81,7 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   
-  //referencing .placeholder allows generated password to be pasted in textbox
+  //the .value property generates the password in a textbox for copy and pasting, whereas .placeholder disables copying the text
 
   passwordText.value = password;
 
