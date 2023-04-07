@@ -36,7 +36,7 @@ Concatenation: https://javascript.info/operators
 
 Invalid conditions, if statements for character types: AskBCS Learning Assistant, skaliaperumal, and Chris Baird (tutor)
 
-Object data storage syntax shorthand: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#property_definitions, 
+Object data storage syntax shorthand: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#property_definitions 
                         
   https://javascript.plainenglish.io/object-literals-using-object-property-shorthand-6360825c60ef
 
